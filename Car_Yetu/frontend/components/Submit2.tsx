@@ -1,12 +1,22 @@
+"use client";
 import Link from "@/node_modules/next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "./ui/button";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FullWidthImageSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <section className="relative w-full h-[80vh]">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('../public/Assets/Submit-bg(small).jpg')] md:bg-[url('../public/Assets/Submit-bg1.jpg')]">
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('../public/Assets/Submit-bg(small).jpg')] md:bg-[url('../public/Assets/Submit-bg1.jpg')]"
+      >
         {" "}
       </div>
 
@@ -15,7 +25,11 @@ const FullWidthImageSection: React.FC = () => {
 
       {/* Content */}
       <div className="relative max-w-4xl z-10 flex items-center justify-center md:justify-start h-full">
-        <div className="max-w-2xl text-center md:text-left px-4 md:px-12">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="max-w-2xl text-center md:text-left px-4 md:px-12"
+        >
           <h1 className="text-xl md:text-3xl font-semibold mb-4 text-white">
             Have quality audi shots?
           </h1>

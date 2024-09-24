@@ -58,11 +58,19 @@ const Footer = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
                 Follow Us!
               </h2>
-              <Link className="textNormal hover:underline" href="merchandise">
+              <Link
+                className="textNormal hover:underline"
+                href="https://web.facebook.com/navas.herbert"
+                target="_blank"
+              >
                 Facebook
               </Link>
               <br />
-              <Link className="textNormal hover:underline" href="parts">
+              <Link
+                className="textNormal hover:underline"
+                href="https://www.instagram.com/audispot254/"
+                target="_blank"
+              >
                 Instagram
               </Link>
               <br />

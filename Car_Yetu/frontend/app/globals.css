@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --background: #0a0e1a;
   --foreground: #fff;
@@ -96,15 +99,21 @@ body {
     @apply bg-[#cf253f] hover:bg-[#cf253f]/80;
   }
   .heading {
-    @apply text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
+    @apply font-roboto text-lg md:text-2xl font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .subHeading {
-    @apply text-lg md:text-xl font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
+    @apply font-roboto text-base md:text-lg font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .textNormal {
-    @apply text-base font-medium text-gray-600 dark:text-gray-300 mb-2 md:mb-4;
+    @apply font-montserrat text-sm md:text-base font-medium text-gray-600 dark:text-gray-300 mb-2 md:mb-4;
   }
   .ctaButton {
     @apply bg-[#cf253f] text-white text-lg hover:text-slate-900;
+  }
+  .primaryBtn {
+    @apply font-montserrat text-base font-medium text-white bg-primaryColor hover:text-white dark:hover:text-primaryColor;
+  }
+  .secondaryBtn {
+    @apply font-montserrat text-base font-medium text-white bg-secondaryColor hover:text-white dark:hover:text-primaryColor;
   }
 }

@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface BlogPost {
   id: string;
@@ -50,7 +53,7 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => (
     </div>
     <CardContent className="p-4">
       <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-      <p className="text-gray-600 mb-4">{post.snippet}</p>
+      <p className="textNormal opacity-70">{post.snippet}</p>
       <Link
         href={`/blog/${post.slug}`}
         className="text-secondaryColor hover:underline"
@@ -62,11 +65,24 @@ const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => (
 );
 
 const LatestBlog: React.FC = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <section className="py-12">
+    <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="heading text-center">Latest from Our Blog</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2
+          data-aos="fade-down"
+          data-aos-duration="500"
+          className="heading text-center"
+        >
+          Latest from Our Blog
+        </h2>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {blogPosts.map((post) => (
             <BlogPostCard key={post.id} post={post} />
           ))}

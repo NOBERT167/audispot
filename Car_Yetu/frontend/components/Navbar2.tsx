@@ -45,60 +45,29 @@ const Navbar2 = () => {
           </div>
           <div className="flex space-x-7">
             <div className="hidden md:flex items-center space-x-1">
-              <Link
-                href="/"
-                className="py-4 px-2 text-gray-700 font-medium dark:text-gray-200 hover:text-[#cf253f]"
-              >
+              <Link href="/" className="px-2 textNormal hover:text-[#cf253f]">
                 Home
               </Link>
               <Link
                 href="/parts"
-                className="py-4 px-2 text-gray-700 font-medium dark:text-gray-200 hover:text-[#cf253f]"
+                className="py-4 px-2 textNormal hover:text-[#cf253f]"
               >
                 Audi Parts
               </Link>
               <Link
                 href="/merchandise"
-                className="py-4 px-2 text-gray-700 font-medium dark:text-gray-200 hover:text-[#cf253f]"
+                className="py-4 px-2 textNormal hover:text-[#cf253f]"
               >
                 Merchandise
               </Link>
             </div>
           </div>
-          {/* <div className="flex space-x-7">
-            <div className="hidden md:flex items-center space-x-1">
-              <Link
-                href="/"
-                className="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              >
-                About
-              </Link>
-              <Link
-                href="/services"
-                className="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              >
-                Services
-              </Link>
-              <Link
-                href="/contact"
-                className="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              >
-                Contact
-              </Link>
-            </div>
-          </div> */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button className="hover:text-[#cf253f]">
+            <Button className="primaryBtn">
               {" "}
               <Link href="/about">About</Link>
             </Button>
-            <Button className="bg-[#cf253f] hover:bg-[#cf253f]/80">
+            <Button className="secondaryBtn">
               <Link href="/support">Buy Me Coffee</Link>
             </Button>
             <div className="flex items-center space-x-2">

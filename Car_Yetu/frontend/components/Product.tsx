@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import productShowcase from "../public/Assets/merchgrouped.jpg";
 import Image from "@/node_modules/next/image";
 import Link from "@/node_modules/next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
-    <section className="py-12 px-4 md:px-8 lg:px-16">
+    <section
+      data-aos="flip-up"
+      data-aos-duration="1000"
+      className="py-12 px-4 md:px-8 lg:px-16"
+    >
       <div className="max-w-4xl mx-auto">
         <h1 className="heading text-center">Merchandise</h1>
         <p className="subHeading">Exclusive Audi Gear - Wear Your Passion</p>

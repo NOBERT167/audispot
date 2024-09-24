@@ -16,7 +16,6 @@ export default function Home() {
       <Testimonials />
       <FullWidthImageSection />
       <LatestBlog />
-      <Footer />
     </main>
   );
 }
