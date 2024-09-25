@@ -45,20 +45,31 @@ const About = () => {
         </div>
       </div>
       <div className="py-8 mx-auto px-4 md:px-8 lg:px-16">
-        <h1 className="heading text-center">Our Story</h1>
+        <h1 className="heading text-center">Our Journey at Audispot254</h1>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <p className="textNormal">
-              Our journey started with a deep passion for Audi. Navas Herbert,
-              the founder of Audispot 254, has been a long-time Audi fan and car
-              enthusiast. After struggling to find high-quality parts and unique
-              merchandise for his own Audi, he decided to take matters into his
-              own hands and create a space where fellow enthusiasts could easily
-              find the parts they need and the gear they love. What started as a
-              small venture has grown into a trusted resource for Audi owners
-              and fans. We’re proud to offer a carefully curated selection of
-              genuine parts and premium apparel, all tailored to meet the needs
-              of our passionate community.
+              Audispot254 was born out of a deep, long-standing passion for Audi
+              and the automotive world. As a car enthusiast and founder, I,
+              Navas Herbert, began simply by sharing posts about Audis for fun.
+              What started as a personal hobby has since grown into a thriving
+              platform for the Audi community in Kenya and beyond.
+            </p>
+            <p className="textNormal">
+              Over time, I realized the need for a dedicated space where fellow
+              Audi lovers could access both high-quality parts and unique
+              merchandise without the hassle. This realization inspired me to
+              take action, and with the support of my community, Audispot254
+              evolved into a trusted resource for Audi enthusiasts.
+            </p>
+            <p className="textNormal">
+              Today, we’re not just about showcasing stunning Audi content.
+              We’re proud to offer a platform where people can easily source
+              genuine Audi parts, enjoy premium merchandise, and connect with
+              others who share the same passion. From helping enthusiasts with
+              parts to celebrating the beauty of Audi cars, our journey is just
+              beginning—and we’re excited about what’s to come for the
+              Audispot254 family.
             </p>
           </div>
 
@@ -68,7 +79,7 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
+              className="rounded-lg shadow-md w-full md:w-3/4 h-auto"
             />
           </div>
         </div>

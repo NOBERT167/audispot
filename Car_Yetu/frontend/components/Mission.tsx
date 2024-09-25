@@ -10,26 +10,23 @@ const Mission = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 bg-black bg-opacity-70" />
 
       {/* Content */}
       <div className="relative max-w-4xl z-10 flex items-center mx-auto justify-center h-full">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="max-w-2xl scale-120 text-center px-4 md:px-12"
+          className="max-w-2xl scale-120 md:scale-150 text-center px-4 md:px-12"
         >
-          <h1 className="text-center font-roboto text-lg md:text-2xl font-semibold mb-2 md:mb-4 text-white">
+          <h1 className="text-secondaryColor text-center font-roboto text-lg md:text-2xl font-semibold mb-2 md:mb-4">
             Our Mission
           </h1>
           <p className="text-center font-montserrat text-sm md:text-base font-medium text-white mb-2 md:mb-4">
-            At Audispot 254, our mission is simple: To help Audi owners maintain
-            and enhance their vehicles while giving them the opportunity to
-            express their love for the brand. We believe in providing
-            high-quality products, fast shipping, and exceptional customer
-            service. Whether you're tuning up your car or adding to your
-            collection of Audi merchandise, we’re here to ensure you get the
-            best.
+            At Audispot254, our mission is to empower Audi enthusiasts by
+            providing easy access to high-quality parts, unique merchandise, and
+            engaging content, while building a passionate community that shares
+            a love for these exceptional cars.
           </p>
         </div>
       </div>
