@@ -5,11 +5,12 @@ import Image from "next/image";
 import support from "../public/Assets/undraw_transfer_money_re_6o1h.svg";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Mission from "./Mission";
 
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto">
-      <div className="max-w-4xl mx-auto py-12 px-4 md:px-8 lg:px-16">
+      <div className="max-w-4xl mx-auto py-8 px-4 md:px-8 lg:px-16">
         <h1 className="heading text-center">About Us – Driven by Passion</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2">
@@ -40,9 +41,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
+      <div className="py-8 mx-auto px-4 md:px-8 lg:px-16">
         <h1 className="heading text-center">Our Story</h1>
-        <div className="flex flex-col lg:flex-row items-center gap-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <p className="textNormal">
               Our journey started with a deep passion for Audi. Navas Herbert,
@@ -64,12 +65,15 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-1/2 h-auto"
+              className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
             />
           </div>
         </div>
       </div>
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
+      <div className="">
+        <Mission />
+      </div>
+      {/* <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
         <h1 className="heading text-center">Our Mission</h1>
         <div className="w-full flex flex-col justify-center">
           <p className="textNormal">
@@ -82,8 +86,8 @@ const About = () => {
             best.
           </p>
         </div>
-      </div>
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
+      </div> */}
+      <div className="py-8 mx-auto px-4 md:px-8 lg:px-16">
         <h1 className="heading text-center">Support Our Journey</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
@@ -115,7 +119,7 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-1/2 h-auto"
+              className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
             />
           </div>
         </div>

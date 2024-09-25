@@ -19,7 +19,9 @@ const HeroSection = () => {
     >
       <div className="max-w-4xl mx-auto">
         <h1 className="heading text-center">Merchandise</h1>
-        <p className="subHeading">Exclusive Audi Gear - Wear Your Passion</p>
+        <p className="subHeading text-center">
+          Exclusive Audi Gear - Wear Your Passion
+        </p>
 
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2">

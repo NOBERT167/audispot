@@ -20,11 +20,17 @@ const Footer = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
                 Products
               </h2>
-              <Link className="textNormal hover:underline" href="merchandise">
+              <Link
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
+                href="merchandise"
+              >
                 Merchandise
               </Link>
               <br />
-              <Link className="textNormal hover:underline" href="parts">
+              <Link
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
+                href="parts"
+              >
                 Audi Parts
               </Link>
               <br />
@@ -33,20 +39,29 @@ const Footer = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
                 Quicklinks
               </h2>
-              <Link className="textNormal hover:underline" href="merchandise">
+              <Link
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
+                href="merchandise"
+              >
                 About Us
               </Link>
               <br />
-              <Link className="textNormal hover:underline" href="parts">
+              <Link
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
+                href="parts"
+              >
                 Buy Me Cofee
               </Link>
               <br />
-              <Link className="textNormal hover:underline" href="merchandise">
+              <Link
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
+                href="merchandise"
+              >
                 Contact
               </Link>
               <br />
               <Link
-                className="textNormal hover:underline"
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
                 href="https://www.instagram.com/audispot254/"
                 target="_blank"
               >
@@ -59,7 +74,7 @@ const Footer = () => {
                 Follow Us!
               </h2>
               <Link
-                className="textNormal hover:underline"
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
                 href="https://web.facebook.com/navas.herbert"
                 target="_blank"
               >
@@ -67,7 +82,7 @@ const Footer = () => {
               </Link>
               <br />
               <Link
-                className="textNormal hover:underline"
+                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
                 href="https://www.instagram.com/audispot254/"
                 target="_blank"
               >
