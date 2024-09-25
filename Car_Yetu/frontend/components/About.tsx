@@ -6,6 +6,7 @@ import support from "../public/Assets/undraw_transfer_money_re_6o1h.svg";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Mission from "./Mission";
+import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -35,12 +36,30 @@ const About = () => {
               Kenya's Audi scene, bringing together fans with exciting events,
               custom gear, and shared experiences.
             </p>
-            <Button className="secondaryBtn mb-4">
-              <Link href="#">Follow us on Instagram!</Link>
-            </Button>
-            <Button className="secondaryBtn">
-              <Link href="#">Follow our facebook page!</Link>
-            </Button>
+            <h2 className="heading">Join Our Community!</h2>
+            <div className="flex items-center space-x-4">
+              <Link
+                href="https://www.instagram.com/audispot254/"
+                target="_blank"
+              >
+                <FaInstagram className="socialIcons" size={32} />
+              </Link>
+              <Link
+                href="https://web.facebook.com/navas.herbert"
+                target="_blank"
+              >
+                <FaFacebook className="socialIcons" size={32} />
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@audispot254?_t=8pzdvtUD16r&_r=1"
+                target="_blank"
+              >
+                <FaTiktok className="socialIcons" size={32} />
+              </Link>
+              <Link href="https://www.youtube.com/@audispotke" target="_blank">
+                <FaYoutube className="socialIcons" size={32} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

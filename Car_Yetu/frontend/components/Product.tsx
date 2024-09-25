@@ -43,10 +43,7 @@ const HeroSection = () => {
               t-shirts, and caps. Whether you're at a car meet or just hanging
               out, look your best in high-quality gear.
             </p>
-            <Button
-              size="lg"
-              className="self-start bg-secondaryColor text-white hover:text-primaryColor"
-            >
+            <Button size="lg" className="secondaryBtn">
               <Link href="merchandise">Shop Now!</Link>
             </Button>
           </div>

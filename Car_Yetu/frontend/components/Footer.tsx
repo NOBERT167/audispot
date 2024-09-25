@@ -1,5 +1,6 @@
 import Link from "@/node_modules/next/link";
 import React from "react";
+import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -73,22 +74,32 @@ const Footer = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
                 Follow Us!
               </h2>
-              <Link
-                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
-                href="https://web.facebook.com/navas.herbert"
-                target="_blank"
-              >
-                Facebook
-              </Link>
-              <br />
-              <Link
-                className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
-                href="https://www.instagram.com/audispot254/"
-                target="_blank"
-              >
-                Instagram
-              </Link>
-              <br />
+              <div className="flex items-center space-x-4">
+                <Link
+                  href="https://www.instagram.com/audispot254/"
+                  target="_blank"
+                >
+                  <FaInstagram className="socialIcons" size={32} />
+                </Link>
+                <Link
+                  href="https://web.facebook.com/navas.herbert"
+                  target="_blank"
+                >
+                  <FaFacebook className="socialIcons" size={32} />
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@audispot254?_t=8pzdvtUD16r&_r=1"
+                  target="_blank"
+                >
+                  <FaTiktok className="socialIcons" size={32} />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@audispotke"
+                  target="_blank"
+                >
+                  <FaYoutube className="socialIcons" size={32} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

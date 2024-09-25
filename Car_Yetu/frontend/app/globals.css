@@ -111,9 +111,12 @@ body {
     @apply bg-[#cf253f] text-white text-lg hover:text-slate-900;
   }
   .primaryBtn {
-    @apply font-montserrat text-base font-medium text-white bg-primaryColor hover:text-white dark:hover:text-primaryColor;
+    @apply font-montserrat text-base font-medium text-white dark:text-primaryColor bg-primaryColor dark:bg-slate-300 dark:hover:bg-slate-500 hover:text-white dark:hover:text-primaryColor;
   }
   .secondaryBtn {
     @apply font-montserrat text-base font-medium text-white bg-secondaryColor hover:text-white dark:hover:text-primaryColor;
+  }
+  .socialIcons {
+    @apply bg-secondaryColor rounded-lg p-1 hover:bg-gray-500 dark:hover:bg-gray-300;
   }
 }
