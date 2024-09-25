@@ -1,11 +1,21 @@
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Mission = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     <div className="relative w-full h-[70vh] md:h-[80vh]">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-[url('../public/Assets/Audi-bg(lg).jpg')] bg-[url('../public/Assets/Audi-bg.jpg')]">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="700"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-[url('../public/Assets/Audi-bg(lg).jpg')] bg-[url('../public/Assets/Audi-bg.jpg')]"
+      >
         {" "}
       </div>
 
