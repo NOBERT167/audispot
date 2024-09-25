@@ -10,7 +10,7 @@ import Mission from "./Mission";
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto">
-      <div className="max-w-4xl mx-auto py-8 px-4 md:px-8 lg:px-16">
+      <div className="max-w-4xl mx-auto py-8 px-4 lg:px-8">
         <h1 className="heading text-center">About Us – Driven by Passion</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2">
@@ -25,12 +25,15 @@ const About = () => {
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <p className="textNormal">
-              At Audispot 254, we’re more than just a store—we’re a community of
-              Audi enthusiasts. Founded by Navas Herbert, our mission is to
-              provide fellow Audi lovers with the best in authentic parts and
-              exclusive merchandise. Whether you’re looking to enhance your
-              car’s performance or show your love for the brand through custom
-              gear, we’re here to deliver.
+              Welcome to Audispot254—Kenya’s ultimate community for Audi
+              enthusiasts. Founded by Navas Herbert, we’re dedicated to bringing
+              together Audi lovers across the country. Audispot254 is your
+              one-stop destination for exclusive merchandise, engaging content,
+              and all things Audi. While we plan to offer authentic parts in the
+              future, our primary focus is building a strong, connected
+              community that shares a passion for the brand. Join us as we grow
+              Kenya's Audi scene, bringing together fans with exciting events,
+              custom gear, and shared experiences.
             </p>
             <Button className="secondaryBtn mb-4">
               <Link href="#">Follow us on Instagram!</Link>
