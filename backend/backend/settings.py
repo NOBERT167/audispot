@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     
     # installed apps 
     'rest_framework',
-    'rest_framework_simplejwt.token.blacklist',
+    'rest_framework_simplejwt',
     'accounts',
 ]
 
@@ -123,3 +123,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
