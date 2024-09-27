@@ -91,7 +91,7 @@ const Navbar2 = () => {
                 onCheckedChange={toggleTheme}
               />
             </div>
-            <Button variant="ghost" size="icon" onClick={toggleMenu}>
+            <Button className="" size="icon" onClick={toggleMenu}>
               {isOpen ? (
                 <X className="h-6 w-6" />
               ) : (
@@ -103,21 +103,29 @@ const Navbar2 = () => {
       </div>
       {isOpen && (
         <div className="md:hidden px-4">
-          <Link href="/" className="textNormal block">
+          <Link href="/" onClick={toggleMenu} className="textNormal block">
             Home
           </Link>
-          <Link href="/parts" className="textNormal block">
+          <Link href="/parts" onClick={toggleMenu} className="textNormal block">
             Audi Parts
           </Link>
-          <Link href="/merchandise" className="textNormal block">
+          <Link
+            href="/merchandise"
+            onClick={toggleMenu}
+            className="textNormal block"
+          >
             Merchandise
           </Link>
           <div className="py-2">
             <Button variant="outline" className="w-full primaryBtn mb-2">
-              <Link href="/about">About</Link>
+              <Link onClick={toggleMenu} href="/about">
+                About
+              </Link>
             </Button>
             <Button className="w-full secondaryBtn mb-4">
-              <Link href="/support">Buy Me Cofee</Link>
+              <Link onClick={toggleMenu} href="/support">
+                Buy Me Cofee
+              </Link>
             </Button>
           </div>
         </div>
