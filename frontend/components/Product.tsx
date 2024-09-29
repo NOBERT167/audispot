@@ -19,7 +19,9 @@ const HeroSection = () => {
     >
       <div className="max-w-4xl mx-auto">
         <h1 className="heading text-center">Merchandise</h1>
-        <p className="subHeading">Exclusive Audi Gear - Wear Your Passion</p>
+        <p className="subHeading text-center">
+          Exclusive Audi Gear - Wear Your Passion
+        </p>
 
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2">
@@ -41,10 +43,7 @@ const HeroSection = () => {
               t-shirts, and caps. Whether you're at a car meet or just hanging
               out, look your best in high-quality gear.
             </p>
-            <Button
-              size="lg"
-              className="self-start bg-secondaryColor text-white hover:text-primaryColor"
-            >
+            <Button size="lg" className="secondaryBtn">
               <Link href="merchandise">Shop Now!</Link>
             </Button>
           </div>

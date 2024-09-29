@@ -36,8 +36,8 @@ const Navbar2 = () => {
             <Link href="/" className="flex items-center py-2 px-1">
               <Image
                 src={logo}
-                width={50}
-                height={50}
+                width={60}
+                height={60}
                 className="rounded-full"
                 alt="logo"
               />
@@ -45,18 +45,21 @@ const Navbar2 = () => {
           </div>
           <div className="flex space-x-7">
             <div className="hidden md:flex items-center space-x-1">
-              <Link href="/" className="px-2 textNormal hover:text-[#cf253f]">
+              <Link
+                href="/"
+                className="px-2 mt-3 textNormal hover:text-[#cf253f]"
+              >
                 Home
               </Link>
               <Link
                 href="/parts"
-                className="py-4 px-2 textNormal hover:text-[#cf253f]"
+                className="py-4 px-2 mt-3 textNormal hover:text-[#cf253f]"
               >
                 Audi Parts
               </Link>
               <Link
                 href="/merchandise"
-                className="py-4 px-2 textNormal hover:text-[#cf253f]"
+                className="py-4 px-2 mt-3 textNormal hover:text-[#cf253f]"
               >
                 Merchandise
               </Link>
@@ -88,7 +91,7 @@ const Navbar2 = () => {
                 onCheckedChange={toggleTheme}
               />
             </div>
-            <Button variant="ghost" size="icon" onClick={toggleMenu}>
+            <Button className="" size="icon" onClick={toggleMenu}>
               {isOpen ? (
                 <X className="h-6 w-6" />
               ) : (
@@ -99,28 +102,30 @@ const Navbar2 = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
-          <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
+        <div className="md:hidden px-4">
+          <Link href="/" onClick={toggleMenu} className="textNormal block">
             Home
           </Link>
-          <Link
-            href="/parts"
-            className="block py-2 px-4 text-sm hover:bg-gray-200"
-          >
+          <Link href="/parts" onClick={toggleMenu} className="textNormal block">
             Audi Parts
           </Link>
           <Link
             href="/merchandise"
-            className="block py-2 px-4 text-sm hover:bg-gray-200"
+            onClick={toggleMenu}
+            className="textNormal block"
           >
             Merchandise
           </Link>
-          <div className="py-2 px-4">
-            <Button variant="outline" className="w-full mb-2">
-              <Link href="/about">About</Link>
+          <div className="py-2">
+            <Button variant="outline" className="w-full primaryBtn mb-2">
+              <Link onClick={toggleMenu} href="/about">
+                About
+              </Link>
             </Button>
-            <Button className="w-full">
-              <Link href="/support">Buy Me Cofee</Link>
+            <Button className="w-full secondaryBtn mb-4">
+              <Link onClick={toggleMenu} href="/support">
+                Buy Me Cofee
+              </Link>
             </Button>
           </div>
         </div>

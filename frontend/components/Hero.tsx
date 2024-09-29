@@ -12,7 +12,7 @@ const Hero = () => {
     AOS.init({});
   }, []);
   return (
-    <section className="px-4 md:px-8 py-8 lg:px-16 min-h-screen">
+    <section className="max-w-6xl px-4 mx-auto py-12">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 md:gap-8">
         <div
           data-aos="zoom-in"
@@ -27,7 +27,7 @@ const Hero = () => {
           </p>
           <div className="flex gap-4">
             <Button className="secondaryBtn text-white text-lg hover:text-slate-900">
-              <Link href="/mechandise" className="">
+              <Link href="/merchandise" className="">
                 Shop Merchandise
               </Link>
             </Button>
@@ -46,8 +46,8 @@ const Hero = () => {
           <Image
             src={heroImg}
             alt="Product showcase"
-            width={600}
-            height={400}
+            // width={600}
+            // height={400}
             className="shadow-lg w-full md:w-3/4 h-auto"
           />
         </div>
