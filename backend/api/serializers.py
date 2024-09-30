@@ -5,4 +5,4 @@ from .models import SliderImage
 class SliderImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = SliderImage
-        fields =['id', 'image', 'caption']
+        fields =['id', 'title', 'image', 'uploaded_at' ]
