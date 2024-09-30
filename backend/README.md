@@ -56,5 +56,18 @@ your preferred browser.
         accounts/login/
     ```
 
+2. Slider Images 
+- Slider Images are accessible through the 'api' route
+```bash
+    Default Route:
+        /api/slider_images/ # This also lists all images [GET]
+    
+    Others:
+        /api/slider_images/ # Upload a new image [POST]
+        /api/slider_images/{id}/ # Retrieves Details Of an Image  [GET]
+        /api/slider_images/{id} # Full update of image [PUT]
+        /api/slider_images/{id} # Partial update of image [PATCH]
+        /api/slider_images/{id} # Delete an image [DELETE]
+```
 ## License
 MIT
