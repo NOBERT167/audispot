@@ -15,7 +15,7 @@ const ComingSoonPage: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
-    const launchDate = new Date("2023-12-31T00:00:00").getTime();
+    const launchDate = new Date("2025-05-31T00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

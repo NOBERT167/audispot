@@ -102,10 +102,10 @@ body {
     @apply font-roboto text-lg md:text-2xl font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .subHeading {
-    @apply font-roboto text-base md:text-lg font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
+    @apply font-roboto text-base md:text-lg font-medium mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .textNormal {
-    @apply font-montserrat text-sm md:text-base font-medium text-gray-600 dark:text-gray-300 mb-2 md:mb-4;
+    @apply font-montserrat text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 mb-2 md:mb-4;
   }
   .ctaButton {
     @apply bg-[#cf253f] text-white text-lg hover:text-slate-900;
