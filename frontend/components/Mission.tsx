@@ -20,7 +20,7 @@ const Mission = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70" />
+      <div className="absolute inset-0 bg-slate-900 bg-opacity-60" />
 
       {/* Content */}
       <div className="relative max-w-4xl z-10 flex items-center mx-auto justify-center h-full">

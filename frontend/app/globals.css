@@ -102,7 +102,7 @@ body {
     @apply font-roboto text-lg md:text-2xl font-semibold mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .subHeading {
-    @apply font-roboto text-base md:text-lg font-medium mb-2 md:mb-4 text-gray-800 dark:text-white;
+    @apply font-roboto text-base md:text-lg font-bold mb-2 md:mb-4 text-gray-800 dark:text-white;
   }
   .textNormal {
     @apply font-montserrat text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 mb-2 md:mb-4;

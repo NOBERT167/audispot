@@ -5,20 +5,13 @@ import Image from "next/image";
 import support from "../public/Assets/undraw_transfer_money_re_6o1h.svg";
 import Link from "next/link";
 import { Button } from "./ui/button";
-<<<<<<< HEAD
-=======
 import Mission from "./Mission";
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
 
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto">
-<<<<<<< HEAD
-      <div className="max-w-4xl mx-auto py-12 px-4 md:px-8 lg:px-16">
-=======
       <div className="max-w-4xl mx-auto py-8 px-4 lg:px-8">
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
         <h1 className="heading text-center">About Us – Driven by Passion</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2">
@@ -33,39 +26,6 @@ const About = () => {
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <p className="textNormal">
-<<<<<<< HEAD
-              At Audispot 254, we’re more than just a store—we’re a community of
-              Audi enthusiasts. Founded by Navas Herbert, our mission is to
-              provide fellow Audi lovers with the best in authentic parts and
-              exclusive merchandise. Whether you’re looking to enhance your
-              car’s performance or show your love for the brand through custom
-              gear, we’re here to deliver.
-            </p>
-            <Button className="secondaryBtn mb-4">
-              <Link href="#">Follow us on Instagram!</Link>
-            </Button>
-            <Button className="secondaryBtn">
-              <Link href="#">Follow our facebook page!</Link>
-            </Button>
-          </div>
-        </div>
-      </div>
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
-        <h1 className="heading text-center">Our Story</h1>
-        <div className="flex flex-col lg:flex-row items-center gap-8">
-          <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <p className="textNormal">
-              Our journey started with a deep passion for Audi. Navas Herbert,
-              the founder of Audispot 254, has been a long-time Audi fan and car
-              enthusiast. After struggling to find high-quality parts and unique
-              merchandise for his own Audi, he decided to take matters into his
-              own hands and create a space where fellow enthusiasts could easily
-              find the parts they need and the gear they love. What started as a
-              small venture has grown into a trusted resource for Audi owners
-              and fans. We’re proud to offer a carefully curated selection of
-              genuine parts and premium apparel, all tailored to meet the needs
-              of our passionate community.
-=======
               Welcome to Audispot254—Kenya’s ultimate community for Audi
               enthusiasts. Founded by Navas Herbert, we’re dedicated to bringing
               together Audi lovers across the country. Audispot254 is your
@@ -129,7 +89,6 @@ const About = () => {
               parts to celebrating the beauty of Audi cars, our journey is just
               beginning—and we’re excited about what’s to come for the
               Audispot254 family.
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
             </p>
           </div>
 
@@ -139,23 +98,15 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-<<<<<<< HEAD
-              className="rounded-lg shadow-md w-1/2 h-auto"
-=======
               className="rounded-lg shadow-md w-full md:w-3/4 h-auto"
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
             />
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
-=======
       <div className="">
         <Mission />
       </div>
       {/* <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
         <h1 className="heading text-center">Our Mission</h1>
         <div className="w-full flex flex-col justify-center">
           <p className="textNormal">
@@ -168,13 +119,8 @@ const About = () => {
             best.
           </p>
         </div>
-<<<<<<< HEAD
-      </div>
-      <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
-=======
       </div> */}
       <div className="py-8 mx-auto px-4 md:px-8 lg:px-16">
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
         <h1 className="heading text-center">Support Our Journey</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
@@ -206,11 +152,7 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-<<<<<<< HEAD
-              className="rounded-lg shadow-md w-1/2 h-auto"
-=======
               className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
->>>>>>> ee79a49ffe94eac3584744036a9147b5324e584e
             />
           </div>
         </div>
