@@ -21,7 +21,7 @@ const FullWidthImageSection: React.FC = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 bg-slate-900 bg-opacity-20" />
 
       {/* Content */}
       <div className="relative max-w-4xl z-10 flex items-center justify-center md:justify-start h-full">

@@ -4,3 +4,10 @@ export interface blogCard {
   currentSlug: string;
   titleImage: any;
 }
+
+export interface blogContentTypes {
+  currentSlug: string;
+  title: string;
+  content: any;
+  titleImage: any;
+}

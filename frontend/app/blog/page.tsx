@@ -1,5 +1,5 @@
 import React from "react";
-import { client, urlFor } from "../lib/sanity";
+import { client, UrlFor } from "../lib/sanity";
 import { blogCard } from "../lib/interface";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -25,7 +25,7 @@ const BlogPage = async () => {
         {data.map((blog) => (
           <Card key={blog.currentSlug}>
             <Image
-              src={urlFor(blog.titleImage).url()}
+              src={UrlFor(blog.titleImage).url()}
               alt="Blog Image"
               width={500}
               height={500}
