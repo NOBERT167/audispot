@@ -30,7 +30,7 @@ const HeroSection = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full h-auto"
+              className="rounded-lg shadow-lg w-full h-auto border"
             />
           </div>
 

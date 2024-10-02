@@ -5,6 +5,7 @@ import { PortableText } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 
+export const revalidate = 30; //revalidates at most 30 seconds
 const fetchBlogContent = async (slug: string) => {
   const query = `*[_type == 'blog' && slug.current == '${slug}'] {
   "currentSlug": slug.current,

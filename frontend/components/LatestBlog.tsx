@@ -1,10 +1,13 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { client } from "@/sanity/lib/client";
+import { blogCard } from "@/app/lib/interface";
+import { urlFor } from "@/sanity/lib/image";
+import { Button } from "./ui/button";
 
 interface BlogPost {
   id: string;
@@ -12,6 +15,19 @@ interface BlogPost {
   snippet: string;
   imageUrl: string;
   slug: string;
+}
+
+export const revalidate = 30; //revalidates at most 30 seconds
+async function fetchLatestBlog() {
+  const query = `*[_type == "blog"] | order(publishedAt desc) [0...3] {
+  title,
+  "currentSlug": slug.current,
+  titleImage,
+  smallDescription
+}`;
+
+  const data = await client.fetch(query);
+  return data;
 }
 
 const blogPosts: BlogPost[] = [
@@ -41,50 +57,34 @@ const blogPosts: BlogPost[] = [
   },
 ];
 
-const BlogPostCard: React.FC<{ post: BlogPost }> = ({ post }) => (
-  <Card className="h-full overflow-hidden">
-    <div className="relative h-48 w-full">
-      <Image
-        src={post.imageUrl}
-        alt={post.title}
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
-    <CardContent className="p-4">
-      <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-      <p className="textNormal opacity-70">{post.snippet}</p>
-      <Link
-        href={`/blog/${post.slug}`}
-        className="text-secondaryColor hover:underline"
-      >
-        Read more
-      </Link>
-    </CardContent>
-  </Card>
-);
-
-const LatestBlog: React.FC = () => {
-  useEffect(() => {
-    AOS.init({});
-  }, []);
+const LatestBlog: React.FC = async () => {
+  const latestBlogs: blogCard[] = await fetchLatestBlog();
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2
-          data-aos="fade-down"
-          data-aos-duration="500"
-          className="heading text-center"
-        >
-          Latest from Our Blog
-        </h2>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {blogPosts.map((post) => (
-            <BlogPostCard key={post.id} post={post} />
+        <h2 className="heading text-center">Latest from Our Blog</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {latestBlogs.map((blog) => (
+            <Card>
+              <Image
+                alt="blog image"
+                width={500}
+                height={500}
+                className="rounded-t-lg h-[200px] object-cover"
+                src={urlFor(blog.titleImage).url()}
+              />
+              <CardContent>
+                <h1 className="subHeading">{blog.title}</h1>
+                <p className="textNormal line-clamp-3">
+                  {blog.smallDescription}
+                </p>
+                <div className="flex justify-center">
+                  <Button asChild className="secondaryBtn">
+                    <Link href={`/blog/${blog.currentSlug}`}>Read More</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
         <div className="text-center mt-8">

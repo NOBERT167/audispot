@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+export const revalidate = 30; //revalidates at most 30 seconds
+
 async function fetchBlog() {
   const query = `
   *[_type == 'blog'] | order(_createdAt desc) {
