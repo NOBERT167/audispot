@@ -32,7 +32,7 @@ const Footer = () => {
                 className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
                 href="parts"
               >
-                Audi Parts
+                Shop Parts
               </Link>
               <br />
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
                 href="/contact"
               >
-                Contact
+                Contact Us
               </Link>
               <br />
               <Link
