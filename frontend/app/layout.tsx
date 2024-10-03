@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Audispot 254",
-  description: "Kenya Audi enthusiasts community",
+  title: "Audispot 254 - Kenya’s ultimate community for Audi enthusiasts.",
+  description: "Rev Up Your Audi – Authentic Parts & Exclusive Merch",
 };
 
 export default function RootLayout({
