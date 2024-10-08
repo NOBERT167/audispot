@@ -134,7 +134,6 @@ export default function ImageSlider(): JSX.Element {
           <Image
             src={images[currentIndex].src}
             alt={`Slider Image ${currentIndex + 1}`}
-            layout="fill"
             objectFit="cover"
             className="rounded-xl transition-all duration-500 ease-in-out cursor-pointer"
           />
