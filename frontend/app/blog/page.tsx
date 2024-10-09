@@ -22,7 +22,7 @@ async function fetchBlog() {
 const BlogPage = async () => {
   const data: blogCard[] = await fetchBlog();
   return (
-    <div className="bg-gray-200 dark:bg-primaryColor">
+    <body className="bg-gray-200 dark:bg-primaryColor">
       <div className="w-full px-4 md:max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 py-10 gap-5">
         {data.map((blog) => (
           <Card key={blog.currentSlug}>
@@ -43,7 +43,7 @@ const BlogPage = async () => {
           </Card>
         ))}
       </div>
-    </div>
+    </body>
   );
 };
 
