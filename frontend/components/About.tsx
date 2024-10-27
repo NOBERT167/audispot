@@ -3,7 +3,7 @@ import React from "react";
 import myCar from "../public/Assets/Audi9.jpg";
 import logo from "../public/Assets/logo.jpg";
 import Image from "next/image";
-import support from "../public/Assets/support.svg";
+import support from "../public/Assets/support.png";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Mission from "./Mission";
@@ -99,7 +99,7 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full md:w-3/4 h-auto"
+              className="rounded-lg shadow-md md:w-3/4 w-full h-auto"
             />
           </div>
         </div>
@@ -133,7 +133,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-3/4">
             <Image
               src={support}
               alt="Product showcase"
