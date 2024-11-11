@@ -28,7 +28,7 @@ const notFound = () => {
           </div>
         </div>
 
-        <div className="my-20 text-center">
+        <div className="py-4 md:py-20 text-left md:text-center">
         <h3 className="subHeading">
           Here are some helpful links to get you back on track:
         </h3>
