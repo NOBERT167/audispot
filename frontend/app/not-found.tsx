@@ -7,7 +7,7 @@ import Image from "next/image";
 const notFound = () => {
   return (
     <main className="bg-gray-200 dark:bg-primaryColor">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-4 lg:px-8">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 py-10">
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <h1 className="heading">
