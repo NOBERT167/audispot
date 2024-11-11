@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
-// import notfound from "../public/Assets/undraw_by_the_road_re_vvs7 (1).svg";
 import Image from "next/image";
 
 const notFound = () => {
@@ -22,7 +21,7 @@ const notFound = () => {
           <div className="w-full lg:w-3/4">
             <Image
               className="rounded-lg shadow-md w-full md:w-3/4 h-auto"
-              src= {notfound}
+              src= "/undraw_by_the_road_re_vvs7 (1).svg"
               width={800}
               height={600}
               alt="404" />

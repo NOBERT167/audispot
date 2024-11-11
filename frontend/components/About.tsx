@@ -153,7 +153,7 @@ const About = () => {
               alt="Donate"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full md:w-1/2 h-auto dark:invert"
+              className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
             />
           </div>
         </div>
