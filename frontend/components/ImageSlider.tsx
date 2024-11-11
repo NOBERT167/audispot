@@ -3,24 +3,24 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import audi1 from "../public/Assets/Audi1.jpg";
-import audi2 from "../public/Assets/Audi2.jpg";
-import audi3 from "../public/Assets/Audi3.jpg";
-import audi4 from "../public/Assets/Audi4.jpg";
-import audi5 from "../public/Assets/Audi5.jpg";
-import audi6 from "../public/Assets/Audi6.jpg";
-import audi7 from "../public/Assets/Audi7.jpg";
-import audi8 from "../public/Assets/Audi8.jpg";
-import audi9 from "../public/Assets/Audi9.jpg";
-import audi10 from "../public/Assets/Audi10.jpg";
-import audi11 from "../public/Assets/Audi11.jpg";
-import audi12 from "../public/Assets/Audi12.jpg";
-import audi13 from "../public/Assets/Audi13.jpg";
-import audi14 from "../public/Assets/Audi14.jpg";
-import audi15 from "../public/Assets/Audi15.jpg";
-import audi16 from "../public/Assets/Audi16.jpg";
-import audi17 from "../public/Assets/Audi17.jpeg";
-import audi18 from "../public/Assets/Audi18.jpeg";
+import audi1 from "../public/Assets/Kenya Audis/Audi1.jpg";
+import audi2 from "../public/Assets/Kenya Audis/Audi2.jpg";
+import audi3 from "../public/Assets/Kenya Audis/Audi3.jpg";
+import audi4 from "../public/Assets/Kenya Audis/Audi4.jpg";
+import audi5 from "../public/Assets/Kenya Audis/Audi5.jpg";
+import audi6 from "../public/Assets/Kenya Audis/Audi6.jpg";
+import audi7 from "../public/Assets/Kenya Audis/Audi7.jpg";
+import audi8 from "../public/Assets/Kenya Audis/Audi8.jpg";
+import audi9 from "../public/Assets/Kenya Audis/Audi9.jpg";
+import audi10 from "../public/Assets/Kenya Audis/Audi10.jpg";
+import audi11 from "../public/Assets/Kenya Audis/Audi11.jpg";
+import audi12 from "../public/Assets/Kenya Audis/Audi12.jpg";
+import audi13 from "../public/Assets/Kenya Audis/Audi13.jpg";
+import audi14 from "../public/Assets/Kenya Audis/Audi14.jpg";
+import audi15 from "../public/Assets/Kenya Audis/Audi15.jpg";
+import audi16 from "../public/Assets/Kenya Audis/Audi16.jpg";
+import audi17 from "../public/Assets/Kenya Audis/Audi17.jpg";
+import audi18 from "../public/Assets/Kenya Audis/Audi18.jpg";
 
 // Interface for image data
 interface ImageData {
@@ -42,25 +42,16 @@ const images: ImageData[] = [
     src: audi4,
   },
   {
-    src: audi14,
-  },
-  {
-    src: audi15,
-  },
-  {
-    src: audi16,
-  },
-  {
-    src: audi17,
-  },
-  {
-    src: audi18,
+    src: audi5,
   },
   {
     src: audi6,
   },
   {
     src: audi7,
+  },
+  {
+    src: audi8,
   },
   {
     src: audi9,
@@ -76,6 +67,18 @@ const images: ImageData[] = [
   },
   {
     src: audi13,
+  },
+  {
+    src: audi14,
+  },
+  {
+    src: audi15,
+  },
+  {
+    src: audi16,
+  },
+  {
+    src: audi17,
   },
 ];
 
@@ -125,9 +128,9 @@ export default function ImageSlider(): JSX.Element {
 
   return (
     <section className="md:max-w-4xl w-full py-8 mx-auto">
-      <div className="relative w-full mx-auto mt-4">
+      <div className="relative w-full px-4 md:px-1 mx-auto mt-4">
         <div
-          className="relative h-[460px] mx-12 group hover:-translate-y-2"
+          className="relative h-[500px] w-full overflow-hidden mx-4 group"
           onMouseOver={handleMouseOver}
           onMouseLeave={handleMouseLeave}
         >
@@ -135,7 +138,7 @@ export default function ImageSlider(): JSX.Element {
             src={images[currentIndex].src}
             alt={`Slider Image ${currentIndex + 1}`}
             objectFit="cover"
-            className="rounded-xl transition-all duration-500 ease-in-out cursor-pointer"
+            className="w-full rounded-lg h-full object-cover transition-all duration-500 ease-in-out cursor-pointer"
           />
         </div>
         <button

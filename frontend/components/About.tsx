@@ -1,8 +1,9 @@
+"use client"
 import React from "react";
 import myCar from "../public/Assets/Audi9.jpg";
 import logo from "../public/Assets/logo.jpg";
 import Image from "next/image";
-import support from "../public/Assets/undraw_transfer_money_re_6o1h.svg";
+// import support from "../public/Assets/undraw_transfer_money_re_6o1h.svg";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Mission from "./Mission";
@@ -148,11 +149,11 @@ const About = () => {
 
           <div className="w-full lg:w-1/2">
             <Image
-              src={support}
-              alt="Product showcase"
+              src= "/undraw_transfer_money_re_6o1h.svg"
+              alt="Donate"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full md:w-1/2 h-auto"
+              className="rounded-lg shadow-md w-full md:w-1/2 h-auto dark:invert"
             />
           </div>
         </div>

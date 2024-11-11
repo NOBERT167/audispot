@@ -13,8 +13,8 @@ const FullWidthImageSection: React.FC = () => {
     <section className="relative w-full h-[80vh]">
       {/* Background Image */}
       <div
-        data-aos="zoom-out"
-        data-aos-duration="2000"
+        // data-aos="zoom-out"
+        // data-aos-duration="2000"
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('../public/Assets/Submit-bg(small).jpg')] md:bg-[url('../public/Assets/Submit-bg1.jpg')]"
       >
         {" "}
