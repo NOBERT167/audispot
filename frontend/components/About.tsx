@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import myCar from "../public/Assets/Audi9.jpg";
 import logo from "../public/Assets/logo.jpg";
@@ -99,7 +98,7 @@ const About = () => {
               alt="Product showcase"
               width={600}
               height={400}
-              className="rounded-lg shadow-md w-full md:w-3/4 h-auto"
+              className="rounded-lg shadow-md md:w-3/4 w-full h-auto"
             />
           </div>
         </div>
@@ -107,20 +106,6 @@ const About = () => {
       <div className="">
         <Mission />
       </div>
-      {/* <div className="py-12 mx-auto px-4 md:px-8 lg:px-16">
-        <h1 className="heading text-center">Our Mission</h1>
-        <div className="w-full flex flex-col justify-center">
-          <p className="textNormal">
-            At Audispot 254, our mission is simple: To help Audi owners maintain
-            and enhance their vehicles while giving them the opportunity to
-            express their love for the brand. We believe in providing
-            high-quality products, fast shipping, and exceptional customer
-            service. Whether you're tuning up your car or adding to your
-            collection of Audi merchandise, we’re here to ensure you get the
-            best.
-          </p>
-        </div>
-      </div> */}
       <div className="py-8 mx-auto px-4 md:px-8 lg:px-16">
         <h1 className="heading text-center">Support Our Journey</h1>
         <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -147,7 +132,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-3/4">
             <Image
               src= "/undraw_transfer_money_re_6o1h.svg"
               alt="Donate"

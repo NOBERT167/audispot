@@ -1,8 +1,10 @@
 "use client";
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
+import notfound from '../public/Assets/not found.png'
 
 const notFound = () => {
   return (
@@ -61,6 +63,15 @@ const notFound = () => {
           </Link>
         </span>
         <br />
+        </div>
+        <div className="">
+          <h3 className="heading">Need some help</h3>
+          <p className="textNormal">
+            If you need further assistance, feel free to reach out to our team.
+            We’re here to help!
+          </p>
+        </div>
+        <div className="mt-10 py-5">
         </div>
         <div className="">
           <h3 className="heading">Need some help</h3>
