@@ -130,7 +130,7 @@ export default function ImageSlider(): JSX.Element {
     <section className="md:max-w-4xl w-full py-8 mx-auto">
       <div className="relative w-full px-4 md:px-1 mx-auto mt-4">
         <div
-          className="relative h-[500px] w-full overflow-hidden mx-4 group"
+          className="relative h-[500px] w-full overflow-hidden group"
           onMouseOver={handleMouseOver}
           onMouseLeave={handleMouseLeave}
         >
