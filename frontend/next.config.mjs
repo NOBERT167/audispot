@@ -32,7 +32,7 @@ const nextConfig = {
     // Ignore TypeScript errors during the build process
     ignoreBuildErrors: true,
   },
-  use: ['@svgr/webpack'],
+  // use: ['@svgr/webpack'],
 };
 
 export default nextConfig;
