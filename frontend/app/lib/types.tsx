@@ -4,3 +4,10 @@ export interface Product {
   price: string;
   imageUrl: string;
 }
+
+export interface ExtendedProduct extends Product {
+  description: string;
+  features: string[];
+  materials?: string;
+  careInstructions?: string;
+}

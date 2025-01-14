@@ -28,9 +28,10 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }: any) => (
         Ksh {product.price.toLocaleString()}
       </p>
     </CardContent>
-    <CardFooter className="p-2">
+    <CardFooter className="pt-2 px-2 flex gap-2 flex-wrap">
       <Button
-        className="w-full secondaryBtn"
+        size={"sm"}
+        className="secondaryBtn"
         onClick={() => console.log(`Ordered ${product.name}`)}
       >
         <Link
@@ -39,6 +40,9 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }: any) => (
         >
           Order Now
         </Link>
+      </Button>
+      <Button className="primaryBtn" size={"sm"}>
+        <Link href={`/merchandise/${product.id}`}>View Details</Link>
       </Button>
     </CardFooter>
   </Card>
