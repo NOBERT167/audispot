@@ -26,9 +26,10 @@ export default function ProductPage({
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Card className="max-w-6xl mx-auto">
-        <CardContent className="p-6">
+    <div className="bg-gray-200 dark:bg-primaryColor">
+      {/* <div className="container mx-auto px-4 py-8"> */}
+      <Card className="max-w-6xl mx-auto border-none">
+        <CardContent className="px-8 pt-12 bg-gray-200 dark:bg-primaryColor">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Product Image */}
             <div className="relative h-96 w-full">

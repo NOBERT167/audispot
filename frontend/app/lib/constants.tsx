@@ -78,7 +78,7 @@ export const enhancedProducts: ExtendedProduct[] = [
     price: "1,200",
     imageUrl: "/Assets/Products/Water Bottle White.jpg",
     description:
-      "Stay hydrated in style with this premium Audi-branded water bottle. Designed with the same attention to detail as our vehicles, this bottle is perfect for track days, car meets, or daily use.",
+      "Stay hydrated in style with this premium Audi-branded water bottle. Designed with the same attention to detail as Audi vehicles we all love, this bottle is perfect for track days, car meets, or daily use.",
     features: [
       "Double-wall vacuum insulation",
       "24-hour cold retention",
