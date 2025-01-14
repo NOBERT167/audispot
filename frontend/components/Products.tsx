@@ -19,45 +19,39 @@ interface reactWhatsap {
 const products: Product[] = [
   {
     id: "1",
-    name: "Black Audi Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Black hoodie.png",
+    name: "White Audi T-shirt",
+    price: "1,200",
+    imageUrl: "/Assets/Products/T-Shirt Front.jpg",
   },
   {
     id: "2",
     name: "White Audi Hoodie",
     price: "2,500",
-    imageUrl: "/Assets/White hoodie.png",
+    imageUrl: "/Assets/Products/Hoodie Front.jpg",
   },
   {
     id: "3",
-    name: "Audi T-shirt",
-    price: "1,000",
-    imageUrl: "/Assets/beige t-shirt.png",
+    name: "White Audi Water Bottle",
+    price: "1,200",
+    imageUrl: "/Assets/Products/Water Bottle White.jpg",
   },
   {
     id: "4",
-    name: "Black Audi T-shirt",
-    price: "2,500",
-    imageUrl: "/Assets/black t-shirt.png",
+    name: "Black Audi Water Bottle",
+    price: "1,200",
+    imageUrl: "/Assets/Products/Water Bottle Black.jpg",
   },
   {
     id: "5",
-    name: "White Audi polo shirt",
-    price: "1,500",
-    imageUrl: "/Assets/White polo t-shirt.png",
+    name: "Black Audi Zipped Hoodie",
+    price: "2,500",
+    imageUrl: "/Assets/Products/Black--Zipped--Hoodie.jpg",
   },
   {
     id: "6",
-    name: "White Audi Hoodie",
+    name: "White Audi Zipped Hoodie",
     price: "2,500",
-    imageUrl: "/Assets/White hoodie2.png",
-  },
-  {
-    id: "7",
-    name: "White Audi Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/White hoodie 3.png",
+    imageUrl: "/Assets/Products/White--Zipped--Hoodie.jpg",
   },
 ];
 
@@ -73,7 +67,9 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }: any) => (
     </div>
     <CardContent className="flex-grow px-2 py-0">
       <h3 className="subHeading">{product.name}</h3>
-      <p className="textNormal opacity-70">Ksh{product.price}</p>
+      <p className="textNormal opacity-70">
+        Ksh {product.price.toLocaleString()}
+      </p>
     </CardContent>
     <CardFooter className="p-2">
       <Button
