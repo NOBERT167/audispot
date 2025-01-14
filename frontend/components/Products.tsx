@@ -4,56 +4,13 @@ import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Product } from "@/app/lib/types";
+import { products } from "@/app/lib/constants";
 
-interface Product {
-  id: string;
-  name: string;
-  price: string;
-  imageUrl: string;
-}
 interface reactWhatsap {
   number: string;
   message: string;
 }
-
-const products: Product[] = [
-  {
-    id: "1",
-    name: "White Audi T-shirt",
-    price: "1,200",
-    imageUrl: "/Assets/Products/T-Shirt Front.jpg",
-  },
-  {
-    id: "2",
-    name: "White Audi Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/Hoodie Front.jpg",
-  },
-  {
-    id: "3",
-    name: "White Audi Water Bottle",
-    price: "1,200",
-    imageUrl: "/Assets/Products/Water Bottle White.jpg",
-  },
-  {
-    id: "4",
-    name: "Black Audi Water Bottle",
-    price: "1,200",
-    imageUrl: "/Assets/Products/Water Bottle Black.jpg",
-  },
-  {
-    id: "5",
-    name: "Black Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/Black--Zipped--Hoodie.jpg",
-  },
-  {
-    id: "6",
-    name: "White Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/White--Zipped--Hoodie.jpg",
-  },
-];
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }: any) => (
   <Card className="h-full flex flex-col">
