@@ -10,7 +10,7 @@ export const products: Product[] = [
   {
     id: "2",
     name: "White Audi Hoodie",
-    price: "2,500",
+    price: "3,000",
     imageUrl: "/Assets/Products/Hoodie Front.jpg",
   },
   {
@@ -24,18 +24,6 @@ export const products: Product[] = [
     name: "Black Audi Water Bottle",
     price: "1,200",
     imageUrl: "/Assets/Products/Water Bottle Black.jpg",
-  },
-  {
-    id: "5",
-    name: "Black Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/Black--Zipped--Hoodie.jpg",
-  },
-  {
-    id: "6",
-    name: "White Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/White--Zipped--Hoodie.jpg",
   },
 ];
 
@@ -59,7 +47,7 @@ export const enhancedProducts: ExtendedProduct[] = [
   {
     id: "2",
     name: "White Audi Hoodie",
-    price: "2,500",
+    price: "3,000",
     imageUrl: "/Assets/Products/Hoodie Front.jpg",
     description:
       "Embrace the spirit of Vorsprung durch Technik with our signature white Audi hoodie. This premium sweatshirt combines German engineering inspiration with contemporary street style.",
@@ -103,37 +91,5 @@ export const enhancedProducts: ExtendedProduct[] = [
     ],
     materials: "18/8 Food-grade stainless steel",
     careInstructions: "Hand wash recommended",
-  },
-  {
-    id: "5",
-    name: "Black Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/Black--Zipped--Hoodie.jpg",
-    description:
-      "Experience ultimate comfort with our black Audi zipped hoodie. Featuring subtle design elements inspired by Audi's sport models, this hoodie is perfect for those who appreciate understated luxury.",
-    features: [
-      "Full-length zipper for versatility",
-      "Hidden pockets with premium stitching",
-      "Sport-inspired design elements",
-      "Comfortable brushed interior",
-    ],
-    materials: "80% Cotton, 20% Polyester",
-    careInstructions: "Machine wash cold, tumble dry low",
-  },
-  {
-    id: "6",
-    name: "White Audi Zipped Hoodie",
-    price: "2,500",
-    imageUrl: "/Assets/Products/White--Zipped--Hoodie.jpg",
-    description:
-      "Channel the pristine elegance of Audi design with our white zipped hoodie. Clean lines and premium materials make this piece a must-have for any Audi enthusiast's wardrobe.",
-    features: [
-      "Premium white finish with contrasting zipper",
-      "Audi Sport-inspired design elements",
-      "Comfortable yet durable construction",
-      "Perfect for all seasons",
-    ],
-    materials: "80% Cotton, 20% Polyester",
-    careInstructions: "Machine wash cold, tumble dry low",
   },
 ];
