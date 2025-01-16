@@ -32,8 +32,8 @@ const Hero = () => {
               </Link>
             </Button>
             <Button className="font-montserrat">
-              <Link href="/buymecofee" className="text-lg">
-                Buy Me Cofee
+              <Link href="/support" className="text-lg">
+                Buy Me Fuel
               </Link>
             </Button>
           </div>
