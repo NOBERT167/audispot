@@ -1,16 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import fuel from "../../public/Assets/Fuel.jpg";
-import { Button } from "@/components/ui/button";
+import { ClipboardCheck, Copy } from "lucide-react";
 
 const Support = () => {
+  const [copy, setCopy] = useState(false);
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText("4970110");
+    setCopy(true);
+  };
+
   return (
     <main className="bg-gray-200 dark:bg-primaryColor">
       <section className="max-w-4xl mx-auto">
         <div className="py-8 px-4 lg:px-6">
           {/* Hero Section */}
-          <div className="text-center mb-12">
+          <div className="text-center pb-6 md:pb-12">
             <h1 className="heading text-center">Support AudiSpot254</h1>
             <p className="textNormal">
               Help us fuel our passion for Audi and keep creating stunning
@@ -52,34 +59,48 @@ const Support = () => {
                   for Audi lovers, and continue offering premium Audi parts and
                   merchandise.
                 </p>
-                <Link href="/supportnow" className="">
-                  <Button className="secondaryBtn w-full hover:text-white text-white text-lg dark:hover:text-slate-900">
+                {/* <Button className="secondaryBtn w-full hover:text-white text-white text-lg dark:hover:text-slate-900">
                     Support Now
-                  </Button>
-                </Link>
+                  </Button> */}
               </div>
             </div>
           </div>
 
-          {/* Ways to Support Section
-          <section className="mb-12">
-            <h2 className="text-3xl font-semibold mb-6">
-              Ways to Support AudiSpot
-            </h2>
+          {/* Support section */}
+          <section className="py-6 md:py-12">
+            <h2 className="heading">Support Audispot 254 Now!</h2>
             <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-2">Lipa na M-Pesa</h3>
-              <p className="mb-4">
+              <h3 className="subHeading">M-Pesa Till</h3>
+              <p className="mb-4 textNormal">
                 Support us directly via M-Pesa Till Number for quick and
                 seamless contributions.
               </p>
-              <p className="font-semibold">
-                Till Number: <span className="text-blue-600">123456</span>
-              </p>
+              <div className="flex items-center gap-4">
+                <span className="subHeading">Till Number:</span>{" "}
+                <div className="flex items-center bg-gray-300 dark:bg-gray-600 px-4 py-2 rounded gap-4">
+                  <span className="text-secondaryColor dark:text-white font-bold font-inter">
+                    4970110
+                  </span>
+                  {copy ? (
+                    <ClipboardCheck
+                      size={16}
+                      className="cursor-pointer text-green-500"
+                      onClick={() => setCopy(false)}
+                    />
+                  ) : (
+                    <Copy
+                      size={16}
+                      onClick={handleCopyClick}
+                      className="cursor-pointer dark:text-gray-300"
+                    />
+                  )}
+                </div>
+              </div>
             </div>
-          </section> */}
+          </section>
 
           {/* Thank You Section */}
-          <section className="text-center mb-12">
+          <section className="text-center pb-8 md:pb-12">
             <h2 className="subHeading">Every Contribution Counts</h2>
             <p className="textNormal">
               Your support means the world to us. Whether it’s a small donation,
@@ -92,7 +113,7 @@ const Support = () => {
           </section>
 
           {/* Contact Section */}
-          <section className="mb-12 text-center">
+          <section className="pb-8 md:pb-12 mt-4 md:mt-8 text-center">
             <h2 className="subHeading">Contact Us for Collaborations</h2>
             <p className="mb-4 textNormal">
               Want to collaborate or sponsor a road trip? Let’s create something
