@@ -49,9 +49,9 @@ const Footer = () => {
               <br />
               <Link
                 className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
-                href="/buymecoffee"
+                href="/support"
               >
-                Buy Me Cofee
+                Buy Me Fuel
               </Link>
               <br />
               <Link
@@ -103,7 +103,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-base font-medium text-gray-300 mb-6 mt-10 text-center">
+        <p className="text-base font-medium font-roboto text-gray-300 mb-6 mt-10 text-center">
           &copy; Copyright Audispot254.All rights reserved
         </p>
       </div>

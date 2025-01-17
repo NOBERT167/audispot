@@ -166,7 +166,7 @@ const Support = () => {
                   target="_blank"
                   className="text-blue-600 hover:text-secondaryColor"
                 >
-                  Whatsap
+                  Whatsapp
                 </Link>
               </li>
             </ul>
