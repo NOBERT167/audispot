@@ -78,8 +78,8 @@ const Navbar2 = () => {
               <ModeToggle />
             </div>
           </div>
-          <div className="md:hidden flex items-center space-x-2">
-            <div className="border border-slate-500 dark:border-slate-300 rounded-sm">
+          <div className="md:hidden flex items-center">
+            <div className="border border-slate-500 dark:border-slate-300 dark:text-white rounded-sm mr-2">
               <ModeToggle />
             </div>
             <Button className="" size="icon" onClick={toggleMenu}>
