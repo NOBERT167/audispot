@@ -26,7 +26,7 @@ const Hero = () => {
             Genuine Audi parts & Exclusive Merchandise for Enthusiasts Like You
           </p>
           <div className="flex gap-4">
-            <Button className="secondaryBtn text-white text-lg hover:text-slate-900">
+            <Button className="secondaryBtn text-white text-lg dark:hover:text-slate-900">
               <Link href="/merchandise" className="">
                 Shop Merchandise
               </Link>

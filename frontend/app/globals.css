@@ -117,6 +117,6 @@ body {
     @apply font-montserrat text-base font-medium text-white bg-secondaryColor hover:text-white dark:hover:text-primaryColor;
   }
   .socialIcons {
-    @apply bg-secondaryColor rounded-lg p-1 hover:bg-gray-500 dark:hover:bg-gray-300;
+    @apply bg-secondaryColor rounded-lg p-1 hover:bg-secondaryColor/20 dark:hover:bg-gray-300;
   }
 }

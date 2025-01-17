@@ -125,6 +125,7 @@ const Support = () => {
                 <a
                   href="mailto:support@audispot.com"
                   className="text-blue-600 hover:text-secondaryColor"
+                  target="_blank"
                 >
                   audispot254@gmail.com
                 </a>
@@ -134,6 +135,7 @@ const Support = () => {
                 <a
                   href="mailto:support@audispot.com"
                   className="text-blue-600 hover:text-secondaryColor"
+                  target="_blank"
                 >
                   0715623803
                 </a>
@@ -143,6 +145,7 @@ const Support = () => {
                 <a
                   href="https://www.instagram.com/audispot254/"
                   className="text-blue-600 hover:text-secondaryColor"
+                  target="_blank"
                 >
                   Instagram
                 </a>
@@ -150,12 +153,14 @@ const Support = () => {
                 <a
                   href="https://www.youtube.com/@audispotke"
                   className="text-blue-600 hover:text-secondaryColor"
+                  target="_blank"
                 >
                   YouTube
                 </a>
                 ,{" "}
                 <a
                   href="https://www.tiktok.com/@audispot254?_t=8pzdvtUD16r&_r=1"
+                  target="_blank"
                   className="text-blue-600 hover:text-secondaryColor"
                 >
                   TikTok

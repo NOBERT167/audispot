@@ -30,7 +30,7 @@ const Footer = () => {
               <br />
               <Link
                 className="text-center font-montserrat text-sm md:text-base font-medium text-gray-300 mb-2 md:mb-4 hover:underline"
-                href="parts"
+                href="audi-parts"
               >
                 Shop Parts
               </Link>

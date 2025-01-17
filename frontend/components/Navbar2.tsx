@@ -52,7 +52,7 @@ const Navbar2 = () => {
                 Home
               </Link>
               <Link
-                href="/parts"
+                href="/audi-parts"
                 className="py-4 px-2 mt-3 textNormal hover:text-[#cf253f]"
               >
                 Audi Parts
@@ -106,7 +106,11 @@ const Navbar2 = () => {
           <Link href="/" onClick={toggleMenu} className="textNormal block">
             Home
           </Link>
-          <Link href="/parts" onClick={toggleMenu} className="textNormal block">
+          <Link
+            href="/audi-parts"
+            onClick={toggleMenu}
+            className="textNormal block"
+          >
             Audi Parts
           </Link>
           <Link
