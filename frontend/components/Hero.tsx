@@ -19,14 +19,14 @@ const Hero = () => {
           data-aos-duration="1000"
           className="w-full lg:w-1/2 flex flex-col justify-start"
         >
-          <h2 className="heading uppercase">
-            Welcome to audispot 254 - your ultimate audi destination
+          <h2 className="heading">
+            Welcome to Audispot254 - your ultimate audi destination
           </h2>
           <p className="textNormal">
             Genuine Audi parts & Exclusive Merchandise for Enthusiasts Like You
           </p>
           <div className="flex gap-4">
-            <Button className="secondaryBtn text-white text-lg dark:hover:text-slate-900">
+            <Button className="secondaryBtn text-white text-lg hover:text-slate-900">
               <Link href="/merchandise" className="">
                 Shop Merchandise
               </Link>
@@ -46,8 +46,6 @@ const Hero = () => {
           <Image
             src={heroImg}
             alt="Product showcase"
-            // width={600}
-            // height={400}
             className="shadow-lg w-full md:w-3/4 h-auto"
           />
         </div>

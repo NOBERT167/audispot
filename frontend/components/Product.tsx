@@ -12,12 +12,12 @@ const HeroSection = () => {
     AOS.init({});
   }, []);
   return (
-    <section
-      data-aos="flip-up"
-      data-aos-duration="1000"
-      className="py-12 px-4 md:px-8 lg:px-16"
-    >
-      <div className="max-w-4xl mx-auto">
+    <section className="py-12 px-4 md:px-8 lg:px-16">
+      <div
+        className="max-w-4xl mx-auto"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+      >
         <h1 className="heading text-center">Merchandise</h1>
         <p className="subHeading text-center">
           Exclusive Audi Gear - Wear Your Passion

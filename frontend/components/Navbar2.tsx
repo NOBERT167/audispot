@@ -74,7 +74,7 @@ const Navbar2 = () => {
             <Button className="secondaryBtn">
               <Link href="/support">Buy Me Coffee</Link>
             </Button>
-            <div className="border border-slate-500 dark:border-slate-300 rounded-sm">
+            <div className="border border-slate-500 dark:border-slate-300 dark:text-white rounded-sm">
               <ModeToggle />
             </div>
           </div>
