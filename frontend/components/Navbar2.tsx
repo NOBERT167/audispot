@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import logo from "../public/Assets/logo.jpg";
 import Image from "@/node_modules/next/image";
+import { ModeToggle } from "./ModeToggle";
 
 const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,13 +74,8 @@ const Navbar2 = () => {
             <Button className="secondaryBtn">
               <Link href="/support">Buy Me Coffee</Link>
             </Button>
-            <div className="flex items-center space-x-2">
-              <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-              <Switch
-                checked={theme === "dark"}
-                onCheckedChange={toggleTheme}
-              />
+            <div className="border border-slate-500 dark:border-slate-100 rounded-sm">
+              <ModeToggle />
             </div>
           </div>
           <div className="md:hidden flex items-center space-x-2">
