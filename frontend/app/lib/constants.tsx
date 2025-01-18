@@ -63,7 +63,7 @@ export const enhancedProducts: ExtendedProduct[] = [
   {
     id: "3",
     name: "White Audi Water Bottle",
-    price: "1,200",
+    price: "1,500",
     imageUrl: "/Assets/Products/Water Bottle White.jpg",
     description:
       "Stay hydrated in style with this premium Audi-branded water bottle. Designed with the same attention to detail as Audi vehicles we all love, this bottle is perfect for track days, car meets, or daily use.",
@@ -79,7 +79,7 @@ export const enhancedProducts: ExtendedProduct[] = [
   {
     id: "4",
     name: "Black Audi Water Bottle",
-    price: "1,200",
+    price: "1,500",
     imageUrl: "/Assets/Products/Water Bottle Black.jpg",
     description:
       "Sleek, sophisticated, and functional – this black Audi water bottle embodies the premium qualities of the brand. Perfect for those who appreciate both form and function.",
