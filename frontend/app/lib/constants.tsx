@@ -16,13 +16,13 @@ export const products: Product[] = [
   {
     id: "3",
     name: "White Audi Water Bottle",
-    price: "1,200",
+    price: "1,500",
     imageUrl: "/Assets/Products/Water Bottle White.jpg",
   },
   {
     id: "4",
     name: "Black Audi Water Bottle",
-    price: "1,200",
+    price: "1,500",
     imageUrl: "/Assets/Products/Water Bottle Black.jpg",
   },
 ];
